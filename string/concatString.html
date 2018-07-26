@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript program to concatenates a given string n times (default is 1).</title>
+</head>
+<body>
+    <script>
+    repeat = function repeat(str, count) {
+    if(typeof(count) == "undefined") {
+    count =1;
+  }
+  return count < 1 ? '' : new Array(count + 1).join(str);
+    }
+document.write(repeat('Ha!'));
+document.write(repeat('Ha!',2));
+document.write(repeat('Ha!',3));
+    </script>
+<!-- The join() method joins the elements of an 
+array into a string, and returns the string. -->
+
+</body>
+</html>
