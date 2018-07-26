@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSON PARSE()</title>
+</head>
+<body>
+    <script>
+        // This is a JSON text string.
+var text = '["cat", "bird", "frog"]';
+
+// Use JSON.parse to convert string to array.
+var result = JSON.parse(text);
+
+// Loop over result.
+for (var i = 0; i < result.length; i++) {
+    document.write(result[i]);
+    document.write("; ");
+}
+document.write(result.length);
+</script>
+</body>
+</html>
